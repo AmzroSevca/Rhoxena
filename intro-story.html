@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro Story</title>
+  <link rel="stylesheet" href="game-style.css">
+  <script src="game-code.js"></script>
+</head>
+<body>
+
+  <button class="music-button-02" type="button" onclick="play()"><img src="intro-story/musical-note-red.png" width="80" height="80"></button>
+  <audio id="audio" src="intro-story/unknown-terrors.mp3"></audio>
+
+  <img src="intro-story/control-room-dark.png" id="wideVideo" width="1920" height="1080">
+
+  <div style="text-align: center;">
+  <button class="warning-message" onclick="typeWriter()"><img name="warning" src="intro-story/incoming-message.gif" width="1500" height="843" onclick="nextImage()"></button>
+
+  <p id="demo" class="foreground-intro-story"></p>
+
+<script>
+var i = 0;
+var txt = 'Research team E and Y have shut down operations in sector 512-0A. This should have never happened, but this must be known. The Rhoxena, recently confirmed to be the source of Gnecymia, have began to exhibit radical behaviors in the Katomiere caverns of planet Breovlan [VN404]. Little is known about the Rhoxena and we have dwindled in numbers as Gnecymia levels spiked in the recent months. We have been unable to make contact with the N.R.U. [Nova Rain Union] for months now. Now our colony is being evacuated in the wake of rumors that the Rhoxena have become hostile and are laying claim to those of us who still remain. Following protocol, the ones of us left will take what research we can and destroy the rest before we make our uncertain escape. The frigidarium and sub levels have already been compromised due to unverified incidences. I pray we live to see another day.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="intro-flash.html">
+<img class="next-button-01" src="intro-story/next-button-01.png" width="1000" height="236">
+</a>
+</div>
+</body>
+</html>

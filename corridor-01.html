@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heating Corridor 01</title>
+  <link rel="stylesheet" href="game-style.css">
+  <script src="game-code.js"></script>
+</head>
+<body>
+
+  <button class="music-button-02" type="button" onclick="play()"><img src="intro-story/musical-note-red.png" width="80" height="80"></button>
+  <audio id="audio" src="level-room/corridors/dark-corridors.mp3"></audio>
+
+  <img src="level-room/corridors/corridors-room-01.png" id="wideVideo" width="1920" height="1080">
+
+  <div class="corridor-01-options">
+    <p id="target">The place seems to be deserted...</p>
+    <p style="color: #00c298;" onclick="firstCorridorI()">Check out the command platform?</p>
+    <p id="target2">Something catches your eye on the ceiling.</p>
+    <p style="color: #00c298;" onclick="firstCorridorII()">Investigate the ceiling?</p>
+    <p id="target3">Wait a minute...</p>
+    <p style="color: #00c298;" onclick="firstCorridorIII()">Re-inspect the object?</p>
+  </div>
+
+<a href="intro-select.html">
+<img class="corridor-arrow-01" src="level-room/corridors/corridors-room-01-arrow-01.png" width="600" height="600">
+</a>
+
+<a href="corridor-02.html">
+<img class="corridor-arrow-02" src="level-room/corridors/corridors-room-01-arrow-02.png" width="600" height="600">
+</a>
+</body>
+</html>

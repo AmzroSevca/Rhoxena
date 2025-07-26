@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heating Corridor 03</title>
+  <link rel="stylesheet" href="game-style.css">
+  <script src="game-code.js"></script>
+</head>
+<body>
+
+  <button class="music-button-02" type="button" onclick="play()"><img src="intro-story/musical-note-red.png" width="80" height="80"></button>
+  <audio id="audio" src="level-room/corridors/dark-corridors.mp3"></audio>
+
+  <img src="level-room/corridors/corridors-room-03.png" id="wideVideo" width="1920" height="1080">
+
+  <a href="game-lose.html">
+  <img src="intro-story/rhoxena-02-dark.png" class="corridor-rhoxena" width="1024" height="1024">
+  </a>
+
+
+  <div class="corridor-03-options">
+    <p id="target">Crouching at the entrance you see a shadowy figure.</p>
+    <p style="color: #00c298;" onclick="thirdCorridorI()">Investigate the shadow?</p>
+    <p id="target2">Something feels strange.</p>
+    <p style="color: #00c298;" onclick="thirdCorridorII()">Stay still?</p>
+    <p id="target3">Perhaps it's best to go back.</p>
+    <p style="color: #00c298;" onclick="thirdCorridorIII()">Try sneaking through the room?</p>
+  </div>
+
+<a href="corridor-02.html">
+<img class="corridor-arrow-05" src="level-room/corridors/corridors-room-03-arrow-01.png" width="600" height="600">
+</a>
+
+<a href="intro-select.html">
+<img class="corridor-arrow-06" src="level-room/corridors/corridors-room-03-arrow-02.png" width="600" height="600">
+</a>
+</body>
+</html>

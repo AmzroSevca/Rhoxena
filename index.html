@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title Screen</title>
+  <link rel="stylesheet" href="game-style.css">
+  <script src="game-code.js"></script>
+</head>
+<body>
+
+
+<div class="overlay">
+
+  <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+  </script>
+
+    <button class="music-button-01" type="button" onclick="play()"><img src="title-screen/musical-note-white.png" width="80" height="80"></button>
+    <audio id="audio" src="title-screen/file-select-metroid-prime.mp3"></audio>
+
+  <a href="load-states.html">
+  <div class="start-overlay">
+      <p style="color: transparent;">Click to Start</p>
+  </div> 
+  </a>
+</div>
+
+
+<video autoplay muted loop id="wideVideo">
+  <source src="title-screen/title-screen-loop.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lower Level 05</title>
+  <link rel="stylesheet" href="game-style.css">
+  <script src="game-code.js"></script>
+</head>
+<body>
+
+  <button class="music-button-02" type="button" onclick="play()"><img src="intro-story/musical-note-red.png" width="80" height="80"></button>
+  <audio id="audio" src="level-room/lowerlvls/caverns.mp3"></audio>
+
+  <img src="level-room/lowerlvls/lower-room-05.png" id="wideVideo" width="1920" height="1080">
+
+<a href="lowerlvl-02.html">
+<img class="lowerlvls-arrow-02" src="level-room/lowerlvls/lowerlvl-room-return-right.png" width="600" height="600">
+</a>
+
+<img class="path-arrow-01" id="arrowCave" src="level-room/lowerlvls/transparency.png" width="600" height="600" onclick="openLink()">
+
+  <div style="text-align: center;">
+  <img class="investigate-button" src="level-room/lowerlvls/lower-room-button-01.png" width="800" height="800" onclick="typeWriter();caveClick();">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p id="demo" class="cave-story"></p>
+
+<script>
+var i = 0;
+var txt = "After exploring the caves for awhile you begin to get a better understanding of how the system is laid out. There could be Rhoxena wondering around anywhere on this planet so it might be best to either try and head back to the ship the way you came or find another way to your where you landed. Considering what you read on the monitor back in the tower, it might be best to just ditch the operation and escape intact. You peer down one of the pathways and ponder your choices...";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>

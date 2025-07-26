@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summit</title>
+  <link rel="stylesheet" href="game-style.css">
+  <script src="game-code.js"></script>
+</head>
+<body>
+
+  <button class="summit-music-button" type="button" onclick="play()"><img src="level-room/summit/musical-note-white.png" width="80" height="80"></button>
+  <audio id="audio" src="level-room/summit/summit-noise.mp3"></audio>
+
+  <img src="level-room/summit/summit-room-03.png" id="wideVideo" width="1920" height="1080">
+
+<a href="summit-02.html">
+<img class="summit-arrow-05" src="level-room/summit/summit-room-03-arrow-01.png" width="400" height="400">
+</a>
+
+<img id="spin" class="summit-wheel" src="level-room/summit/gate-wheel.png" width="1000" height="1000" onclick="coreClick();mouseClick();animateRotate();typeWriter();"></p>
+
+<a href="intro-select.html">
+<img id="arrow" class="summit-arrow-06" src="level-room/summit/transparency.png" width="400" height="400">
+</a>
+
+<a href="game-lose.html">
+<img id="rhoxenaCore" class="summit-rhoxena" src="level-room/summit/transparency.png" width="1000" height="1000">
+</a>
+
+  <p id="demo" class="summit-story"></p>
+
+<script>
+var i = 0;
+var txt = "After finding and activating the laboratory calibration core, something emerges from the shadows! Will you flee or fight it?";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>

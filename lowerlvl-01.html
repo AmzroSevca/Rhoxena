@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lower Level 01</title>
+  <link rel="stylesheet" href="game-style.css">
+  <script src="game-code.js"></script>
+</head>
+<body>
+
+  <button class="music-button-02" type="button" onclick="play()"><img src="intro-story/musical-note-red.png" width="80" height="80"></button>
+  <audio id="audio" src="level-room/lowerlvls/caverns.mp3"></audio>
+
+  <img src="level-room/lowerlvls/lower-room-01.png" id="wideVideo" width="1920" height="1080">
+
+  <div style="text-align: center;">
+  <img class="investigate-button" src="level-room/lowerlvls/lower-room-button-01.png" width="800" height="800" onclick="typeWriter()">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p id="demo" class="cave-story"></p>
+
+<script>
+var i = 0;
+var txt = 'Well here you are. Standing in a cave that looks incredibly ominous. But what were you expecting? This is a survival horror game of sorts after all. Looking around you, you begin to realize that this cave is a sprawling system with plenty of paths. Which way will you go? Better choose wisely and use caution. Who knows what could be around here considering what was displayed on the monitor of the Control Room Tower...';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<a href="intro-select.html">
+<img class="lowerlvls-arrow-01" src="level-room/lowerlvls/lowerlvl-room-01-arrow-01.png" width="600" height="600">
+</a>
+
+<a href="lowerlvl-03.html">
+<img class="path-arrow-01" src="level-room/lowerlvls/lowerlvl-room-01-arrow-03.png" width="600" height="600">
+</a>
+
+<a href="lowerlvl-02.html">
+<img class="lowerlvls-arrow-02" src="level-room/lowerlvls/lowerlvl-room-01-arrow-02.png" width="600" height="600">
+</a>
+
+<a href="lowerlvl-04.html">
+<img class="path-arrow-02" src="level-room/lowerlvls/lowerlvl-room-01-arrow-04.png" width="600" height="600">
+</a>
+
+</body>
+</html>
